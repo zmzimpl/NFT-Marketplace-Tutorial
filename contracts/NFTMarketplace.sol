@@ -114,7 +114,7 @@ contract NFTMarketplace is ERC721URIStorage {
         uint nftCount = _tokenIds.current();
         ListedToken[] memory tokens = new ListedToken[](nftCount);
         uint currentIndex = 0;
-
+ 
         //at the moment currentlyListed is true for all, if it becomes false in the future we will 
         //filter out currentlyListed == false over here
         for(uint i=0;i<nftCount;i++)
